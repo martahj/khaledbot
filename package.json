@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "beepboop-botkit": "^1.4.1",
-    "botkit": "1.4.1"
+    "botkit": "^0.5.6"
   },
   "engines": {
     "node": "8.0"
