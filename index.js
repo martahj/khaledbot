@@ -4,7 +4,7 @@ var beepboop = require("beepboop-botkit");
 var token = process.env.SLACK_TOKEN
 
 var controller = Botkit.slackbot({
-  debug: false
+  debug: true
 });
 
 if (token) {
@@ -297,8 +297,8 @@ controller.hears(["lol", "lmao", "haha"], ["ambient"], function(bot, message) {
     var index = Math.floor(Math.random() * laughing.length);
     bot.reply(message, laughing[index]);
   }
-  
-}) 
+
+})
 
 
 controller.hears(["send key to"], ["direct_message", "direct_metion"], function(bot, message) {
